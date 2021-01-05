@@ -16,7 +16,7 @@ class City(db.Model):
 
 @app.route("/", methods = ["POST", "GET"])
 def index():
-    url = "http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&APPID=ef6f17146d78fccc79afb5f7d50d454b"
+    url = "http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&APPID=your openweatherapp.org api key"
     cities = City.query.all()
     weather_data = []
     if request.method == "POST":
